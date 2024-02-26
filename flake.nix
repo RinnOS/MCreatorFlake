@@ -68,7 +68,7 @@
 
           src = fetchTarball {
             url = "https://github.com/MCreator/MCreator/releases/download/${fullVersion}/MCreator.${version}.Linux.64bit.tar.gz";
-            sha256 = "sha256-2ONqVQwoBj3xAueV4HWQiAGuVVrm76eKryo7VBdgCDs=";
+            sha256 = "16krk8mb05yi98zvv9znddx238d5hhs095mmvr1xn46g7dpfv00m";
           };
 
           installPhase = ''
