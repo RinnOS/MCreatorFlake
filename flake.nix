@@ -66,9 +66,10 @@
             (pkgs.lib.lists.take 2 (builtins.splitVersion fullVersion));
           versionDash = replaceStrings [ "." ] [ "-" ] version;
 
-          src = fetchTarball
-            "https://github.com/MCreator/MCreator/releases/download/${fullVersion}/MCreator.${version}.Linux.64bit.tar.gz";
-          sha256 = "Dk1nrX0S8huzB+FFruNfYDlTB5fiA67Ads8YmXeNmfI=";
+          src = fetchTarball {
+            url = "https://github.com/MCreator/MCreator/releases/download/${fullVersion}/MCreator.${version}.Linux.64bit.tar.gz";
+            sha256 = "16krk8mb05yi98zvv9znddx238d5hhs095mmvr1xn46g7dpfv00m";
+          };
 
           installPhase = ''
             mkdir -p "$out/share/applications"
