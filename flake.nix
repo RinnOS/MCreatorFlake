@@ -68,6 +68,7 @@
 
           src = fetchTarball
             "https://github.com/MCreator/MCreator/releases/download/${fullVersion}/MCreator.${version}.Linux.64bit.tar.gz";
+          sha256 = "Dk1nrX0S8huzB+FFruNfYDlTB5fiA67Ads8YmXeNmfI=";
 
           installPhase = ''
             mkdir -p "$out/share/applications"
